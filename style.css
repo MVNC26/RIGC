@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.container-grid{
+    width: 80vw;
+    max-width: 1520px;
+    margin: 0 auto;
+}
+
+.banner{
+    height: 100vh;
+    
+    background-image: url(Img/Firefly\ muralha\ da\ china\ 76653\ 2.png) ;
+    background-repeat: no-repeat;
+
+    background-size: contain;
+    background-size: cover; 
+}
+
+header{
+    background-color: #021C51;
+    height: 150px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
+header div.container-grid{
+    width: 60vw;
+    max-width: 1520px;
+}
+
+nav{
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
