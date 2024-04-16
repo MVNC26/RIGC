@@ -1,70 +1,107 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.container-grid{
+.container-grid {
     width: 80vw;
     max-width: 1520px;
     margin: 0 auto;
 }
 
-.banner{
+.banner {
     height: 100vh;
-    
-    background-image: url(Img/Firefly\ muralha\ da\ china\ 76653\ 2.png) ;
+
+    background-image: url(Img/Firefly\ muralha\ da\ china\ 76653\ 2.png);
     background-repeat: no-repeat;
 
     background-size: contain;
-    background-size: cover; 
+    background-size: cover;
+
 }
 
-header{
+header {
     background-color: #021C51;
-    height: 150px;
+    height: 250px;
 
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
+
+    background: linear-gradient(180deg, rgba(2, 28, 81, 1) 51%, rgba(255, 255, 255, 0) 100%);
+    
 }
 
-header div.container-grid{
+header div.container-grid {
     width: 60vw;
     max-width: 1520px;
 }
 
-nav{
+nav {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
+    margin-bottom: 10%;
+
 }
 
-.banner a{
-   background-color: #002c86; 
-   background-size: 200px;
-   height: 35px;
-   width: 150px;
-   border-radius: 20px;
+.banner a {
+    background-color: #002c86;
+    background-size: 200px;
+    height: 30px;
+    width: 150px;
+    border-radius: 20px;
 
-   color: white;
-   outline: none;
-
-
-   display: flex;
-   align-items: center;
-   justify-content: center;
-
-   box-shadow:  5px 5px 7px rgb(0, 0, 0), -2px -2px 7px rgb(255, 255, 255);
-   
-   text-decoration: none;
+    color: white;
+    outline: none;
 
 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 5px 5px 7px rgb(0, 0, 0), -2px -2px 7px rgb(255, 255, 255);
+
+    text-decoration: none;
+}
+
+.conteudo-banner{
+    height: calc(100vh - 280px);
+
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.conteudo-banner .container-grid{
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+
+.conteudo-banner a{
+    background-color: #8563A6;
+    background-size: 200px;
+    height: 30px;
+    width: 300px;
+    border-radius: 10px;
+
+    box-shadow: 5px 5px 7px rgb(0, 0, 0), -2px -2px 3px rgb(201, 160, 243);
     
-} 
+    margin-bottom: 20px;
+    
+}
