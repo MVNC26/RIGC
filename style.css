@@ -59,9 +59,10 @@ nav {
     background-color: #002c86;
     background-size: 200px;
     height: 30px;
-    width: 150px;
+    width: 170px;
     border-radius: 20px;
 
+    font-family: "righteous";
     color: white;
     outline: none;
 
@@ -86,6 +87,7 @@ nav {
 .conteudo-banner .container-grid{
     height: 100%;
     display: flex;
+    align-items: center;
     justify-content: flex-end;
 }
 
@@ -99,29 +101,44 @@ nav {
 .conteudo-banner a{
     background-color: #8563A6;
     background-size: 200px;
-    height: 30px;
-    width: 300px;
+    height: 40px;
+    width: 450px;
     border-radius: 10px;
 
     box-shadow: 5px 5px 7px rgb(0, 0, 0), -2px -2px 3px rgb(201, 160, 243);
     
     margin-bottom: 20px;  
+
+    font-family: "righteous";
+    font-size: 20px;
+}
+
+.conteudo-banner img{
+    height: 400px ;
+    width: 600px;
+
 }
 
 #sobre{
-    padding: 100px;
+    padding: 50px;
 }
 
 h2{
-    height: 30px;
-    width: 300px;
+    font-family: "righteous";
+    
+    height: 40px;
+    width: 500px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     background-color: #8563A6 ;
     color: white;
 
-    box-shadow: 0px 0px 25px #CAA0F3;
+    box-shadow: 0px 0px 8px 8px rgba(202,160,243,0.79);
 
-    margin-bottom: 30px;
+    margin-bottom: 45px;
 }
 
 .conteudo-quemsomos{
@@ -131,16 +148,185 @@ h2{
 }
 
 .texto-quemsomos{
-    height:357px ;
-    width: 300px;
+    height: 400px ;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     color: white;
 }
 
+.texto-quemsomos p{
+    font-family: "Athiti";
+    font-size: 20px;
+    line-height: 40px;
+
+}
+
 .conteudo-quemsomos img{
-    height: 357px ;
-    width: 50%;
+    height: 500px ;
+    width: 70%;
 
     display: flex;
     align-items: center;
+}
+
+.conteudo-oquefazemos img{
+    height: 700px;
+    width: 800px;
+
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.conteudo-oquefazemos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-oquefazemos{
+    height: 400px ;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+}
+
+.conteudo-oquefazemos p{
+    font-family: "Athiti";
+    font-size: 20px;
+    line-height: 40px;
+}
+
+#dragoes{
+    height: 210px;
+    margin-bottom: 50px;
+
+    background-image:url(Img/quebra\ de\ seção.png);
+
+    background-attachment: fixed;
+
+    position: relative;
+}
+
+#duvidas{
+    width: 50%;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}
+
+#duvidas img{
+    width: 700px;
+}
+
+.conteudo-duvidas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        
+    color: white;
+}
+
+
+.conteudo-duvidas p{
+    font-family: "Athiti";
+    font-size: 20px;
+    line-height: 40px;
+}
+.pergunta{
+    margin-bottom: 10px;
+}
+
+#contato{
+    height: 100vh;
+
+    margin-top: 70px ;
+    margin-bottom: 70px;
+
+    background-image: url(Img/fundo\ formulario.png);
+}
+
+#contato h2{
+    margin-bottom: 20px;
+}
+
+#contato .container-grid{
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#contato form{
+    width: 100%;
+    height: 350px;
+
+    background-color: #694f84;
+    color: white;
+
+    padding-top: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.dados-pessoais{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 35px;
+}
+
+label{
+    width: 220px; 
+    margin-bottom: 8px;
+}
+
+ input{
+    height: 30px;
+    border-radius:5px;
+
+    border: none;
+
+    text-indent: 10px;
+    
+}
+
+.nome{
+    display: flex;
+    flex-direction:column;
+}
+
+.email{
+    display: flex;
+    flex-direction:column;
+}
+
+.assunto{
+    display: flex;
+    flex-direction: column;
+}
+
+.assunto textarea{
+    height: 200px;
+
+    border: none;
+    border-radius: 10px;
+
+    resize: none;
+
+    text-indent: 10px;
+
 }
