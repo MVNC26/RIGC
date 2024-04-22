@@ -41,7 +41,7 @@ header {
 }
 
 header div.container-grid {
-    width: 60vw;
+    width: 70vw;
     max-width: 1520px;
 }
 
@@ -52,7 +52,10 @@ nav {
     align-items: center;
 
     margin-bottom: 10%;
+}
 
+.banner nav a:hover{
+    background-color: #021C51;
 }
 
 .banner a {
@@ -74,6 +77,14 @@ nav {
     box-shadow: 5px 5px 7px rgb(0, 0, 0), -2px -2px 7px rgb(255, 255, 255);
 
     text-decoration: none;
+}
+
+.banner .retorno a{
+    background-color: transparent;
+    box-shadow: none;
+
+    position: fixed;
+    top: 60px;
 }
 
 .conteudo-banner{
@@ -149,12 +160,11 @@ h2{
 
 .texto-quemsomos{
     height: 400px ;
-    width: 500px;
+    width: 800px;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 
     color: white;
 }
@@ -163,6 +173,7 @@ h2{
     font-family: "Athiti";
     font-size: 20px;
     line-height: 40px;
+    text-align: justify;
 
 }
 
@@ -197,6 +208,7 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: justify;
 
     color: white;
 }
@@ -239,14 +251,25 @@ h2{
     color: white;
 }
 
+.conteudo-duvidas h2{
+   display: flex;
+   justify-content: center;
+
+}
 
 .conteudo-duvidas p{
     font-family: "Athiti";
     font-size: 20px;
     line-height: 40px;
 }
-.pergunta{
+
+.conteudo-duvidas h3{
     margin-bottom: 10px;
+    font-family: "Athiti";
+    font-size: 20px;
+    text-transform: uppercase;
+    line-height: 40px;
+    text-align: left;
 }
 
 #contato{
@@ -277,11 +300,13 @@ h2{
     background-color: #694f84;
     color: white;
 
+    border-radius: 10px;
     padding-top: 10px;
     padding-left: 15px;
     padding-right: 15px;
-}
 
+    margin-bottom: 15px;
+}
 
 .dados-pessoais{
     display: flex;
@@ -292,16 +317,19 @@ h2{
 label{
     width: 220px; 
     margin-bottom: 8px;
+
+    font-family: "righteous";
+    font-size: 20px;
 }
 
  input{
     height: 30px;
     border-radius:5px;
-
     border: none;
 
     text-indent: 10px;
-    
+    font-family: "righteous"; 
+    font-size: 16px; 
 }
 
 .nome{
@@ -324,9 +352,228 @@ label{
 
     border: none;
     border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
 
     resize: none;
 
     text-indent: 10px;
+    font-family: "righteous";
+    font-size: 16px;
+}
+
+.botao-enviar{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+} 
+
+.nome input:focus, .email input:focus, .assunto textarea:focus{
+    outline: 2px solid #CE8704;
+}
+ 
+
+ button{
+    height: 30px;
+    width: 250px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+    border: none;
+
+    background-color: #8563A6;
+    color: white;
+    box-shadow: 5px 5px 7px rgb(0, 0, 0), -2px -2px 3px rgb(201, 160, 243);
+
+    font-family: "righteous";
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#contato form button:hover{
+    background-color: #694F84;
+    box-shadow: none;
+}
+
+#cases{
+    height: 50vh;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+.container-cards{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    height: 400px;
+    width: 350px;
+    background-color: #8563A6;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    box-shadow:  0px 0px 6px 6px transparent;
+
+    padding-top: 20px;
+
+    transition: box-shadow, transform 500ms ease;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow:  0px 0px 6px 6px rgba(202,160,243,0.79);
+}
+
+.card img{
+    height: 200px;
+    width: 90%;
+
+    margin-bottom: 70px;
+}
+
+.inferior-card{
+    background-color: #CAA0F3;
+
+    height: 120px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.card a{
+    height: 50px;
+    width: 60%;
+
+    color: white;
+    border-radius: 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "righteous";
+    font-size: 20px;
+
+    text-decoration: none;
+}
+
+#portfolio{
+    margin-bottom: 200px;
+}
+
+.conteudo-portfolio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.texto-portfolio{
+    height: 400px ;
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: justify;
+
+    color: white;
+}
+
+.texto-portfolio p{
+    font-family: "Athiti";
+    font-size: 20px;
+    line-height: 40px;
 
 }
+
+.conteudo-portfolio img{
+    height: 400px ;
+    width: 40%;
+
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    height: 200px;
+    background-color: #021C51;
+}
+
+footer .container-grid{
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+footer .conteudo-footer{
+    height: 100%;
+    width: 58%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+footer .texto-footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .texto-footer h4{
+    color: white;
+
+    font-family: "righteous";
+    font-size: 28px;
+    margin-bottom: 10px;
+
+}
+
+footer .texto-footer p{
+    color: white;
+    font-family: "Athiti";
+    font-size: 24px;
+    line-height: 35px;
+}
+
+.inferior-footer{
+    height: 50px;
+
+    background-color: #033495;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+}
+.inferior-footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+.icones-redes{
+    width: 300px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
