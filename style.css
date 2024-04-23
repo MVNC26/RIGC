@@ -167,6 +167,7 @@ h2{
     justify-content: center;
 
     color: white;
+
 }
 
 .texto-quemsomos p{
@@ -273,7 +274,7 @@ h2{
 }
 
 #contato{
-    height: 100vh;
+    height:100vh;
 
     margin-top: 70px ;
     margin-bottom: 70px;
@@ -575,5 +576,16 @@ footer .texto-footer p{
     justify-content: space-between;
 }
 
+.icones-redes a{
+    color: white;
+}
+
+.icones-redes a:hover{
+    color: #CE8704;
+}
+
+.texto-quemsomos, .texto-oquefazemos, .conteudo-duvidas, .texto-portfolio{
+    visibility: hidden;
+}
 
 
