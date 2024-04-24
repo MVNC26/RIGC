@@ -406,8 +406,7 @@ button {
 button.botao-hambuerguer{
     box-shadow: none;
     background-color: none;
-    color: none;
-    
+    color: none;  
 }
 
 #contato form button:hover {
