@@ -18,6 +18,6 @@ sr.reveal('.conteudo-duvidas',{
 
 
 sr.reveal('.texto-portfolio',{
-    rotate: {x:0, y:0, z:100},
+    rotate: {x:0, y:100, z:0},
     duration:1000
 })

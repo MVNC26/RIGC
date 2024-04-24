@@ -8,7 +8,7 @@ html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background-color: black;
 }
 
@@ -20,6 +20,7 @@ body{
 
 .banner {
     height: 100vh;
+    width: 100%;
 
     background-image: url(Img/Firefly\ muralha\ da\ china\ 76653\ 2.png);
     background-repeat: no-repeat;
@@ -37,8 +38,12 @@ header {
     align-items: center;
 
     background: linear-gradient(180deg, rgba(2, 28, 81, 1) 51%, rgba(255, 255, 255, 0) 100%);
-    
 }
+
+header .container-grid button, header svg {
+    display:none;
+}
+
 
 header div.container-grid {
     width: 70vw;
@@ -54,7 +59,7 @@ nav {
     margin-bottom: 10%;
 }
 
-.banner nav a:hover{
+.banner nav a:hover {
     background-color: #021C51;
 }
 
@@ -79,7 +84,7 @@ nav {
     text-decoration: none;
 }
 
-.banner .retorno a{
+.banner .retorno a {
     background-color: transparent;
     box-shadow: none;
 
@@ -87,29 +92,29 @@ nav {
     top: 60px;
 }
 
-.conteudo-banner{
+.conteudo-banner {
     height: calc(100vh - 280px);
 
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
 }
 
-.conteudo-banner .container-grid{
+.conteudo-banner .container-grid {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
 
-.conteudo{
+.conteudo {
     display: flex;
     flex-direction: column;
-    align-items: center ;
+    align-items: center;
 }
 
 
-.conteudo-banner a{
+.conteudo-banner a {
     background-color: #8563A6;
     background-size: 200px;
     height: 40px;
@@ -117,49 +122,49 @@ nav {
     border-radius: 10px;
 
     box-shadow: 5px 5px 7px rgb(0, 0, 0), -2px -2px 3px rgb(201, 160, 243);
-    
-    margin-bottom: 20px;  
+
+    margin-bottom: 20px;
 
     font-family: "righteous";
     font-size: 20px;
 }
 
-.conteudo-banner img{
-    height: 400px ;
+.conteudo-banner img {
+    height: 400px;
     width: 600px;
 
 }
 
-#sobre{
+#sobre {
     padding: 50px;
 }
 
-h2{
+h2 {
     font-family: "righteous";
-    
+
     height: 40px;
     width: 500px;
 
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    background-color: #8563A6 ;
+
+    background-color: #8563A6;
     color: white;
 
-    box-shadow: 0px 0px 8px 8px rgba(202,160,243,0.79);
+    box-shadow: 0px 0px 8px 8px rgba(202, 160, 243, 0.79);
 
     margin-bottom: 45px;
 }
 
-.conteudo-quemsomos{
+.conteudo-quemsomos {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.texto-quemsomos{
-    height: 400px ;
+.texto-quemsomos {
+    height: 400px;
     width: 800px;
 
     display: flex;
@@ -170,7 +175,7 @@ h2{
 
 }
 
-.texto-quemsomos p{
+.texto-quemsomos p {
     font-family: "Athiti";
     font-size: 20px;
     line-height: 40px;
@@ -178,15 +183,15 @@ h2{
 
 }
 
-.conteudo-quemsomos img{
-    height: 500px ;
+.conteudo-quemsomos img {
+    height: 500px;
     width: 70%;
 
     display: flex;
     align-items: center;
 }
 
-.conteudo-oquefazemos img{
+.conteudo-oquefazemos img {
     height: 700px;
     width: 800px;
 
@@ -195,14 +200,14 @@ h2{
     justify-content: start;
 }
 
-.conteudo-oquefazemos{
+.conteudo-oquefazemos {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.texto-oquefazemos{
-    height: 400px ;
+.texto-oquefazemos {
+    height: 400px;
     width: 500px;
 
     display: flex;
@@ -214,57 +219,57 @@ h2{
     color: white;
 }
 
-.conteudo-oquefazemos p{
+.conteudo-oquefazemos p {
     font-family: "Athiti";
     font-size: 20px;
     line-height: 40px;
 }
 
-#dragoes{
+#dragoes {
     height: 210px;
     margin-bottom: 50px;
 
-    background-image:url(Img/quebra\ de\ seção.png);
+    background-image: url(Img/quebra\ de\ seção.png);
 
     background-attachment: fixed;
 
     position: relative;
 }
 
-#duvidas{
+#duvidas {
     width: 50%;
     margin: 0 auto;
 
     display: flex;
     flex-direction: column;
-    align-items:center ;
+    align-items: center;
 }
 
-#duvidas img{
+#duvidas img {
     width: 700px;
 }
 
-.conteudo-duvidas{
+.conteudo-duvidas {
     display: flex;
     flex-direction: column;
     align-items: center;
-        
+
     color: white;
 }
 
-.conteudo-duvidas h2{
-   display: flex;
-   justify-content: center;
+.conteudo-duvidas h2 {
+    display: flex;
+    justify-content: center;
 
 }
 
-.conteudo-duvidas p{
+.conteudo-duvidas p {
     font-family: "Athiti";
     font-size: 20px;
     line-height: 40px;
 }
 
-.conteudo-duvidas h3{
+.conteudo-duvidas h3 {
     margin-bottom: 10px;
     font-family: "Athiti";
     font-size: 20px;
@@ -273,20 +278,20 @@ h2{
     text-align: left;
 }
 
-#contato{
-    height:100vh;
+#contato {
+    height: 100vh;
 
-    margin-top: 70px ;
+    margin-top: 70px;
     margin-bottom: 70px;
 
     background-image: url(Img/fundo\ formulario.png);
 }
 
-#contato h2{
+#contato h2 {
     margin-bottom: 20px;
 }
 
-#contato .container-grid{
+#contato .container-grid {
     height: 100%;
 
     display: flex;
@@ -294,7 +299,7 @@ h2{
     align-items: center;
 }
 
-#contato form{
+#contato form {
     width: 100%;
     height: 350px;
 
@@ -309,46 +314,46 @@ h2{
     margin-bottom: 15px;
 }
 
-.dados-pessoais{
+.dados-pessoais {
     display: flex;
     justify-content: space-between;
     margin-bottom: 35px;
 }
 
-label{
-    width: 220px; 
+label {
+    width: 220px;
     margin-bottom: 8px;
 
     font-family: "righteous";
     font-size: 20px;
 }
 
- input{
+input {
     height: 30px;
-    border-radius:5px;
+    border-radius: 5px;
     border: none;
 
     text-indent: 10px;
-    font-family: "righteous"; 
-    font-size: 16px; 
+    font-family: "righteous";
+    font-size: 16px;
 }
 
-.nome{
-    display: flex;
-    flex-direction:column;
-}
-
-.email{
-    display: flex;
-    flex-direction:column;
-}
-
-.assunto{
+.nome {
     display: flex;
     flex-direction: column;
 }
 
-.assunto textarea{
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.assunto {
+    display: flex;
+    flex-direction: column;
+}
+
+.assunto textarea {
     height: 200px;
 
     border: none;
@@ -363,19 +368,21 @@ label{
     font-size: 16px;
 }
 
-.botao-enviar{
+.botao-enviar {
     display: flex;
     justify-content: center;
 
     margin-top: 20px;
-} 
+}
 
-.nome input:focus, .email input:focus, .assunto textarea:focus{
+.nome input:focus,
+.email input:focus,
+.assunto textarea:focus {
     outline: 2px solid #CE8704;
 }
- 
 
- button{
+
+button {
     height: 30px;
     width: 250px;
 
@@ -396,19 +403,26 @@ label{
     cursor: pointer;
 }
 
-#contato form button:hover{
+button.botao-hambuerguer{
+    box-shadow: none;
+    background-color: none;
+    color: none;
+    
+}
+
+#contato form button:hover {
     background-color: #694F84;
     box-shadow: none;
 }
 
-#cases{
+#cases {
     height: 50vh;
     margin-bottom: 50px;
     margin-top: 100px;
     margin-bottom: 200px;
 }
 
-.container-cards{
+.container-cards {
     width: 100%;
     height: 100%;
 
@@ -416,7 +430,7 @@ label{
     justify-content: space-between;
 }
 
-.card{
+.card {
     height: 400px;
     width: 350px;
     background-color: #8563A6;
@@ -425,26 +439,26 @@ label{
     flex-direction: column;
     align-items: center;
 
-    box-shadow:  0px 0px 6px 6px transparent;
+    box-shadow: 0px 0px 6px 6px transparent;
 
     padding-top: 20px;
 
     transition: box-shadow, transform 500ms ease;
 }
 
-.card:hover{
+.card:hover {
     transform: scale(1.1);
-    box-shadow:  0px 0px 6px 6px rgba(202,160,243,0.79);
+    box-shadow: 0px 0px 6px 6px rgba(202, 160, 243, 0.79);
 }
 
-.card img{
+.card img {
     height: 200px;
     width: 90%;
 
     margin-bottom: 70px;
 }
 
-.inferior-card{
+.inferior-card {
     background-color: #CAA0F3;
 
     height: 120px;
@@ -454,7 +468,7 @@ label{
     align-items: center
 }
 
-.card a{
+.card a {
     height: 50px;
     width: 60%;
 
@@ -471,18 +485,18 @@ label{
     text-decoration: none;
 }
 
-#portfolio{
+#portfolio {
     margin-bottom: 200px;
 }
 
-.conteudo-portfolio{
+.conteudo-portfolio {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.texto-portfolio{
-    height: 400px ;
+.texto-portfolio {
+    height: 400px;
     width: 600px;
 
     display: flex;
@@ -494,34 +508,34 @@ label{
     color: white;
 }
 
-.texto-portfolio p{
+.texto-portfolio p {
     font-family: "Athiti";
     font-size: 20px;
     line-height: 40px;
 
 }
 
-.conteudo-portfolio img{
-    height: 400px ;
+.conteudo-portfolio img {
+    height: 400px;
     width: 40%;
 
     display: flex;
     align-items: center;
 }
 
-footer{
+footer {
     height: 200px;
     background-color: #021C51;
 }
 
-footer .container-grid{
+footer .container-grid {
     height: 100%;
 
     display: flex;
     justify-content: flex-end;
 }
 
-footer .conteudo-footer{
+footer .conteudo-footer {
     height: 100%;
     width: 58%;
 
@@ -531,13 +545,13 @@ footer .conteudo-footer{
 
 }
 
-footer .texto-footer{
-    display:flex;
+footer .texto-footer {
+    display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-footer .texto-footer h4{
+footer .texto-footer h4 {
     color: white;
 
     font-family: "righteous";
@@ -546,14 +560,14 @@ footer .texto-footer h4{
 
 }
 
-footer .texto-footer p{
+footer .texto-footer p {
     color: white;
     font-family: "Athiti";
     font-size: 24px;
     line-height: 35px;
 }
 
-.inferior-footer{
+.inferior-footer {
     height: 50px;
 
     background-color: #033495;
@@ -563,29 +577,164 @@ footer .texto-footer p{
     justify-content: center;
     justify-content: center;
 }
-.inferior-footer p{
+
+.inferior-footer p {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
 
-.icones-redes{
+.icones-redes {
     width: 300px;
 
     display: flex;
     justify-content: space-between;
 }
 
-.icones-redes a{
+.icones-redes a {
     color: white;
 }
 
-.icones-redes a:hover{
+.icones-redes a:hover {
     color: #CE8704;
 }
 
-.texto-quemsomos, .texto-oquefazemos, .conteudo-duvidas, .texto-portfolio{
+.texto-quemsomos,
+.texto-oquefazemos,
+.conteudo-duvidas,
+.texto-portfolio {
     visibility: hidden;
 }
 
+@media screen and (max-width: 1470px) {
 
+    header {
+        position: relative;
+    }
+
+    header .container-grid {
+        height: 100%;
+
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 50px;
+    }
+
+    header .container-grid button, header svg {
+        display:unset;
+    }
+
+    header button {
+        width: 50px;
+
+        display: unset;
+
+        background: none;
+        border: none;
+    }
+
+    header svg {
+        fill: #fff;
+    }
+
+    .conteudo-banner {
+        display: none;
+    }
+
+    nav.menu {
+        flex-direction: column;
+        justify-content: space-around;
+
+        width: 350px;
+        height: 500px;
+        padding: 0px 30px;
+
+        background-color: #000000f0;
+
+        position: absolute;
+        top: 100px;
+        right: 0px;
+    }
+
+    .conteudo-quemsomos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo-quemsomos img {
+        display: none;
+    }
+
+    .texto-quemsomos {
+        width: 500px;
+        margin-bottom: 150px;
+    }
+
+    .conteudo-oquefazemos {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .conteudo-oquefazemos img {
+        display: none;
+    }
+
+    #contato {
+        height: 120vh;
+        margin-bottom: 100px;
+    }
+
+    #contato .container-grid {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-grid .conteudo-footer {
+        width: 90%;
+    }
+
+    .card {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .card {
+        height: 350px;
+        width: 250px;
+    }
+
+    .texto-portfolio h2 {
+        width: 450px;
+    }
+
+    .texto-portfolio {
+        width: 450px;
+    }
+}
+
+@media screen and (max-width: 970px) {
+    .card {
+        height: 300px;
+        width: 220px;
+    }
+
+    .conteudo-portfolio img {
+        height: 250px;
+    }
+
+    .texto-portfolio h2 {
+        width: 350px;
+        margin-bottom: 15px;
+    }
+
+    .texto-portfolio {
+        height: 250px;
+        width: 350px;
+    }
+
+    .texto-portfolio p {
+        line-height: 30px;
+    }
+
+}
