@@ -40,8 +40,9 @@ header {
     background: linear-gradient(180deg, rgba(2, 28, 81, 1) 51%, rgba(255, 255, 255, 0) 100%);
 }
 
-header .container-grid button, header svg {
-    display:none;
+header .container-grid button,
+header svg {
+    display: none;
 }
 
 
@@ -403,10 +404,10 @@ button {
     cursor: pointer;
 }
 
-button.botao-hambuerguer{
+button.botao-hambuerguer {
     box-shadow: none;
     background-color: none;
-    color: none;  
+    color: none;
 }
 
 #contato form button:hover {
@@ -619,8 +620,9 @@ footer .texto-footer p {
         margin-top: 50px;
     }
 
-    header .container-grid button, header svg {
-        display:unset;
+    header .container-grid button,
+    header svg {
+        display: unset;
     }
 
     header button {
@@ -735,5 +737,214 @@ footer .texto-footer p {
     .texto-portfolio p {
         line-height: 30px;
     }
-
 }
+
+    @media screen and (max-width: 970px) {
+        .card {
+            height: 290px;
+            width: 200px;
+        }
+
+        .container-grid .conteudo-footer {
+            width: 100%;
+        }
+
+        .conteudo-portfolio img {
+            height: 250px;
+        }
+
+        .texto-portfolio h2 {
+            width: 350px;
+            margin-bottom: 15px;
+        }
+
+        .texto-portfolio {
+            height: 250px;
+            width: 350px;
+        }
+
+        .texto-portfolio p {
+            line-height: 30px;
+        }
+    }
+
+    @media screen and (max-width: 750px) {
+        .container-cards {
+            align-items: center;
+        }
+
+        .card {
+            height: 290px;
+            width: 180px;
+        }
+
+        .conteudo-portfolio {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .texto-portfolio {
+            margin-bottom: 120px;
+        }
+
+        .conteudo-portfolio img {
+            height: 300px;
+            width: 400px;
+        }
+
+        footer {
+            height: 250px;
+        }
+
+        .conteudo-footer {
+
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        #duvidas img {
+            display: none;
+        }
+
+        .conteudo-duvidas {
+            margin-top: 50px;
+        }
+
+        #portfolio {
+            margin-bottom: 50px;
+        }
+
+        .texto-portfolio {
+            display: flex;
+            align-items: center;
+            width: 450px;
+        }
+
+        #cases{
+            height: unset
+        }
+
+        .container-cards {
+            flex-wrap: wrap;
+
+            justify-content: center;
+            gap: 80px;
+        }
+
+        .card {
+            height: 300px;
+
+            flex-grow: 0;
+            flex-shrink: 0;
+            flex-basis: 40%;
+        }
+
+    }
+
+    @media screen and (max-width: 500px){
+        #sobre{
+            height: unset;
+        }
+        .texto-quemsomos h2{
+            width: 300px;
+            margin-bottom: 15px;
+        }
+        .texto-quemsomos{
+            height: 300px;
+            width: 300px;
+        }
+
+        .texto-quemsomos p{
+            height: 250px;
+            font-size: 18px;
+            line-height: 35px;
+        }
+
+        .texto-oquefazemos h2{
+            margin-bottom: 15px;
+            width: 300px;
+        }
+
+        .texto-oquefazemos{
+            width: 300px;
+        }
+
+        .texto-oquefazemos p{
+            height: 250px;
+             font-size: 18px;
+             line-height: 35px;
+        }
+
+        .conteudo-duvidas h2 {
+            width: 300px;
+        }
+
+        #contato h2{
+            width: 300px;
+            margin-left: 50px;
+        }
+
+        .conteudo-contato{
+            width: 400px;
+        }
+        
+        .conteudo-contato input{
+            width: 300px;
+        }
+        
+        .email{
+            margin-top: 15px;
+        }
+
+        .dados-pessoais{
+            margin-bottom: 10px;
+        }
+
+        .assunto{
+            height: 170px;
+            width: 300px;
+            display: flex;
+            align-items:start;
+        }
+
+        form .dados-pessoais {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        .botao-enviar{
+            margin-top: 35px;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;    
+        }
+        
+        .texto-portfolio{
+            width: 350px;
+
+        }
+
+        .conteudo-footer{
+            padding: 15px;
+        }
+
+        .inferior-footer{
+            font-size: 12px;
+        }
+
+        .card{
+            flex-basis: unset;
+            width: 250px;
+          }
+    }
+
+   
+    
+
