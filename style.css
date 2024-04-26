@@ -286,6 +286,7 @@ h2 {
     margin-bottom: 70px;
 
     background-image: url(Img/fundo\ formulario.png);
+
 }
 
 #contato h2 {
@@ -638,8 +639,9 @@ footer .texto-footer p {
         fill: #fff;
     }
 
-    .conteudo-banner {
-        display: none;
+    .conteudo-banner .container-grid {
+        display: flex;
+        justify-content: center;
     }
 
     nav.menu {
@@ -655,6 +657,10 @@ footer .texto-footer p {
         position: absolute;
         top: 100px;
         right: 0px;
+    }
+
+    nav img {
+        display: none;
     }
 
     .conteudo-quemsomos {
@@ -681,8 +687,9 @@ footer .texto-footer p {
     }
 
     #contato {
-        height: 120vh;
+        height: 100vh;
         margin-bottom: 100px;
+
     }
 
     #contato .container-grid {
@@ -739,212 +746,382 @@ footer .texto-footer p {
     }
 }
 
-    @media screen and (max-width: 970px) {
-        .card {
-            height: 290px;
-            width: 200px;
-        }
-
-        .container-grid .conteudo-footer {
-            width: 100%;
-        }
-
-        .conteudo-portfolio img {
-            height: 250px;
-        }
-
-        .texto-portfolio h2 {
-            width: 350px;
-            margin-bottom: 15px;
-        }
-
-        .texto-portfolio {
-            height: 250px;
-            width: 350px;
-        }
-
-        .texto-portfolio p {
-            line-height: 30px;
-        }
+@media screen and (max-width: 970px) {
+    .card {
+        height: 290px;
+        width: 200px;
     }
 
-    @media screen and (max-width: 750px) {
-        .container-cards {
-            align-items: center;
-        }
-
-        .card {
-            height: 290px;
-            width: 180px;
-        }
-
-        .conteudo-portfolio {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .texto-portfolio {
-            margin-bottom: 120px;
-        }
-
-        .conteudo-portfolio img {
-            height: 300px;
-            width: 400px;
-        }
-
-        footer {
-            height: 250px;
-        }
-
-        .conteudo-footer {
-
-            display: flex;
-            flex-direction: column;
-        }
+    .container-grid .conteudo-footer {
+        width: 100%;
     }
 
-    @media screen and (max-width: 700px) {
-        #duvidas img {
-            display: none;
-        }
+    .conteudo-portfolio img {
+        height: 250px;
+    }
 
-        .conteudo-duvidas {
-            margin-top: 50px;
-        }
+    .texto-portfolio h2 {
+        width: 350px;
+        margin-bottom: 15px;
+    }
 
-        #portfolio {
-            margin-bottom: 50px;
-        }
+    .texto-portfolio {
+        height: 250px;
+        width: 350px;
+    }
 
-        .texto-portfolio {
-            display: flex;
-            align-items: center;
-            width: 450px;
-        }
+    .texto-portfolio p {
+        line-height: 30px;
+    }
+}
 
-        #cases{
-            height: unset
-        }
+@media screen and (max-width: 850px){
+    .conteudo-banner img  {
+       width: 500px;
+    }
+}
 
-        .container-cards {
-            flex-wrap: wrap;
+@media screen and (max-width: 750px) {
+    .container-cards {
+        align-items: center;
+    }
 
-            justify-content: center;
-            gap: 80px;
-        }
+    .card {
+        height: 290px;
+        width: 180px;
+    }
 
-        .card {
-            height: 300px;
+    .conteudo-portfolio {
+        display: flex;
+        flex-direction: column;
+    }
 
-            flex-grow: 0;
-            flex-shrink: 0;
-            flex-basis: 40%;
-        }
+    .texto-portfolio {
+        margin-bottom: 120px;
+    }
+
+    .conteudo-portfolio img {
+        height: 300px;
+        width: 400px;
+    }
+
+    footer {
+        height: 250px;
+    }
+
+    .conteudo-footer {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer .texto-footer h4 {
+        font-size: 20px;
+    }
+
+    footer .texto-footer p {
+        font-size: 18px;
+    }
+
+    footer .conteudo-footer {
+        height: 250px;
+        padding: 30px;
+    }
+
+    .icones-redes {
+        width: 250px;
+    }
+
+    .icones-redes svg {
+        height: 35px;
+        width: 35px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #duvidas img {
+        display: none;
+    }
+
+    .conteudo-duvidas {
+        margin-top: 50px;
+    }
+
+    #portfolio {
+        margin-bottom: 50px;
+    }
+
+    .texto-portfolio {
+        display: flex;
+        align-items: center;
+        width: 450px;
+    }
+
+    #cases {
+        height: unset
+    }
+
+    .container-cards {
+        flex-wrap: wrap;
+
+        justify-content: center;
+        gap: 80px;
+    }
+
+    .card {
+        height: 300px;
+
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 40%;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    #sobre {
+        height: unset;
+    }
+
+    .conteudo-banner img{
+        height: 300px;
+        width: 300px;
+    }
+
+    .conteudo-banner a{
+        width: 300px;
+    }
+
+    .texto-quemsomos h2 {
+        width: 300px;
+        margin-bottom: 15px;
+    }
+
+    .texto-quemsomos {
+        height: 300px;
+        width: 300px;
+    }
+
+    .texto-quemsomos p {
+        height: 250px;
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+    .texto-oquefazemos h2 {
+        margin-bottom: 15px;
+        width: 300px;
+    }
+
+    .texto-oquefazemos {
+        width: 300px;
+    }
+
+    .texto-oquefazemos p {
+        height: 250px;
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+    .conteudo-duvidas h2 {
+        width: 300px;
+    }
+
+    #contato h2 {
+        width: 300px;
+        margin: 0 auto 30px;
+    }
+
+    .conteudo-contato {
+        width: 400px;
+    }
+
+    .conteudo-contato input {
+        width: 300px;
+    }
+
+    .email {
+        margin-top: 15px;
+    }
+
+    .dados-pessoais {
+        margin-bottom: 10px;
+    }
+
+    .assunto {
+        height: 170px;
+        width: 300px;
+        display: flex;
+        align-items: start;
+    }
+
+    form .dados-pessoais {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
     }
 
-    @media screen and (max-width: 500px){
-        #sobre{
-            height: unset;
-        }
-        .texto-quemsomos h2{
-            width: 300px;
-            margin-bottom: 15px;
-        }
-        .texto-quemsomos{
-            height: 300px;
-            width: 300px;
-        }
-
-        .texto-quemsomos p{
-            height: 250px;
-            font-size: 18px;
-            line-height: 35px;
-        }
-
-        .texto-oquefazemos h2{
-            margin-bottom: 15px;
-            width: 300px;
-        }
-
-        .texto-oquefazemos{
-            width: 300px;
-        }
-
-        .texto-oquefazemos p{
-            height: 250px;
-             font-size: 18px;
-             line-height: 35px;
-        }
-
-        .conteudo-duvidas h2 {
-            width: 300px;
-        }
-
-        #contato h2{
-            width: 300px;
-            margin-left: 50px;
-        }
-
-        .conteudo-contato{
-            width: 400px;
-        }
-        
-        .conteudo-contato input{
-            width: 300px;
-        }
-        
-        .email{
-            margin-top: 15px;
-        }
-
-        .dados-pessoais{
-            margin-bottom: 10px;
-        }
-
-        .assunto{
-            height: 170px;
-            width: 300px;
-            display: flex;
-            align-items:start;
-        }
-
-        form .dados-pessoais {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            
-        }
-
-        .botao-enviar{
-            margin-top: 35px;
-        }
-
-        form{
-            display: flex;
-            flex-direction: column;
-            align-items: center;    
-        }
-        
-        .texto-portfolio{
-            width: 350px;
-
-        }
-
-        .conteudo-footer{
-            padding: 15px;
-        }
-
-        .inferior-footer{
-            font-size: 12px;
-        }
-
-        .card{
-            flex-basis: unset;
-            width: 250px;
-          }
+    .botao-enviar {
+        margin-top: 35px;
     }
 
-   
-    
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
+    .texto-portfolio {
+        width: 350px;
+
+    }
+
+    .conteudo-footer {
+        padding: 15px;
+    }
+
+    .inferior-footer {
+        font-size: 12px;
+    }
+
+    .card {
+        flex-basis: unset;
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #sobre {
+        padding: 30px;
+    }
+
+    .conteudo-banner img{
+        height: 200px;
+        width: 200px;
+    }
+
+    .conteudo-banner a{
+        width: 200px;
+        font-size: 14px;
+    }
+
+    .conteudo-quemsomos {
+      height: 400px;
+    }
+
+    .texto-quemsomos{
+        display: flex;
+        align-items: center;
+    }
+
+    .texto-quemsomos h2 {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+
+    .texto-quemsomos p {
+        height: 250px;
+        width: 250px;
+        font-size: 15px;
+        line-height: 35px;
+    }
+
+    .texto-oquefazemos h2 {
+        width: 250px;
+        margin-bottom: 15px;
+    }
+
+    .texto-oquefazemos p {
+        height: 250px;
+        width: 250px;
+        font-size: 15px;
+        line-height: 35px;
+    }
+
+    .conteudo-duvidas h2 {
+        width: 250px;
+    }
+
+    .texto-portfolio h2 {
+        width: 250px;
+    }
+
+    .texto-portfolio p {
+        width: 250px;
+        font-size: 16px;
+    }
+
+    .conteudo-portfolio img {
+        height: 200px;
+        width: 300px;
+    }
+
+    footer .texto-footer h4 {
+        font-size: 18px;
+    }
+
+    footer .texto-footer p {
+        font-size: 16px;
+    }
+
+    footer .conteudo-footer {
+        height: 250px;
+        padding: 30px;
+    }
+
+    .icones-redes {
+        width: 250px;
+    }
+
+    .icones-redes svg {
+        height: 30px;
+        width: 30px;
+    }
+
+    .inferior-footer p {
+        font-size: 10px;
+    }
+
+    #contato h2 {
+        width: 200px;
+        margin-left: 30px;
+    }
+
+    .conteudo-contato {
+        width: 250px;
+    }
+
+    .conteudo-contato input {
+        width: 200px;
+    }
+
+    .email {
+        margin-top: 15px;
+    }
+
+    .dados-pessoais {
+        margin-bottom: 10px;
+    }
+
+    .assunto {
+        height: 170px;
+        width: 220px;
+        display: flex;
+        align-items: start;
+    }
+
+    form .dados-pessoais {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .assunto textarea {
+        width: 200px;
+    }
+
+    .botao-enviar {
+        margin-top: 35px;
+    }
+}
