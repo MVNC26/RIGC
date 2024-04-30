@@ -688,6 +688,7 @@ footer .texto-footer p {
 
     #contato {
         height: 100vh;
+        background-repeat: no-repeat;
         margin-bottom: 100px;
 
     }
