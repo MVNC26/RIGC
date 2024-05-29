@@ -607,6 +607,14 @@ footer .texto-footer p {
     visibility: hidden;
 }
 
+.menu-fechado{
+    display: none;
+}
+
+#botao-hambuerguer{
+    display: none;
+}
+
 @media screen and (max-width: 1470px) {
 
     header {
@@ -876,7 +884,14 @@ footer .texto-footer p {
         flex-shrink: 0;
         flex-basis: 40%;
     }
+}
 
+@media screen and ( max-width: 600px){
+    
+    nav.menu{
+        width: 100%;
+        top: 135px
+    }
 }
 
 @media screen and (max-width: 500px) {
